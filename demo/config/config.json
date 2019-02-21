@@ -1,0 +1,63 @@
+{
+    "projectName": "Bnq-Component UI",
+    "routeType": "browser",
+    "menuPosition": "left",
+    "openPaths": ["/", "/403", "/404", "/500" ],
+    "userHabit": false,
+    "query": {
+        "screen-xs": {
+            "maxWidth": 575
+        },
+        "screen-sm": {
+            "minWidth": 576,
+            "maxWidth": 767
+        },
+        "screen-md": {
+            "minWidth": 768,
+            "maxWidth": 991
+        },
+        "screen-lg": {
+            "minWidth": 992,
+            "maxWidth": 1199
+        },
+        "screen-xl": {
+            "minWidth": 1200
+        }
+    },
+    "menus": [
+        {
+            "name": "入门指南",
+            "key": "guide",
+            "path": "/guide"
+        },
+        {
+            "name": "组件",
+            "key": "components",
+            "children": [
+                {
+                    "name": "通用组件",
+                    "key": "common",
+                    "type": "title",
+                    "children": [
+                        {
+                            "name": "测试组件",
+                            "key": "test",
+                            "path": "/test"
+                        }
+                    ]
+                }, {
+                    "name": "业务组件",
+                    "key": "service",
+                    "type": "title",
+                    "children": [
+                        {
+                            "name": "测试业务组件",
+                            "key": "testservice",
+                            "path": "/testservice"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

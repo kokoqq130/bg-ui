@@ -1,0 +1,50 @@
+{
+  "name": "bnq-sys-react-component",
+  "version": "0.0.3",
+  "description": "react component for bnq",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "gen:md": "node ../scripts/genMd.js",
+    "gen:index": "node ../scripts/genIndex.js",
+    "babel:run": "babel --config-file ../../babel.config.js component -d lib",
+    "copy:less": "node ../scripts/copyLess.js",
+    "prepub": "npm run gen:index && npm run babel:run && npm run copy:less"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "antd": ">=3.9.0",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0",
+    "classnames": ">=2.2.6",
+    "axios": ">=0.18.0",
+    "moment": ">=2.24.0",
+    "prop-types": ">=15.6.2"
+  },
+  "dependencies": {
+    "immutability-helper": "^2.9.0",
+    "lodash.debounce": "^4.0.8",
+    "lodash.isobject": "^3.0.2",
+    "lodash.uniqby": "^4.7.0",
+    "qs": "^6.6.0",
+    "rc-drawer": "^1.7.7",
+    "react-dnd": "^7.0.2",
+    "react-dnd-html5-backend": "^7.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-import": "^1.6.6",
+    "classnames": "^2.2.6"
+  }
+}
