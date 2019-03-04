@@ -2,8 +2,12 @@
     "projectName": "Bnq-Component UI",
     "routeType": "browser",
     "menuPosition": "left",
-    "openPaths": ["/", "/403", "/404", "/500" ],
+    "openPaths": ["/", "/403", "/404", "/500"],
     "userHabit": false,
+    "api": {
+        "protocol": "http",
+        "domain": "tms-dev.bnq.com.cn/"
+    },
     "query": {
         "screen-xs": {
             "maxWidth": 575
@@ -24,40 +28,41 @@
             "minWidth": 1200
         }
     },
-    "menus": [
-        {
-            "name": "入门指南",
+    "menus": [{
+            "name": "使用入门",
             "key": "guide",
             "path": "/guide"
+        }, {
+            "name": "编写组件",
+            "key": "towrite",
+            "path": "/towrite"
         },
         {
             "name": "组件",
             "key": "components",
-            "children": [
-                {
-                    "name": "通用组件",
-                    "key": "common",
-                    "type": "title",
-                    "children": [
-                        {
-                            "name": "测试组件",
-                            "key": "test",
-                            "path": "/test"
-                        }
-                    ]
+            "children": [{
+                "name": "通用组件",
+                "key": "common",
+                "type": "title",
+                "children": [{
+                    "name": "测试组件",
+                    "key": "test",
+                    "path": "/test"
+                }]
+            }, {
+                "name": "业务组件",
+                "key": "service",
+                "type": "title",
+                "children": [{
+                    "name": "测试业务组件",
+                    "key": "testservice",
+                    "path": "/testservice"
                 }, {
-                    "name": "业务组件",
-                    "key": "service",
-                    "type": "title",
-                    "children": [
-                        {
-                            "name": "测试业务组件",
-                            "key": "testservice",
-                            "path": "/testservice"
-                        }
-                    ]
-                }
-            ]
+                    "name": "新建表单",
+                    "key": "new",
+                    "path": "/new"
+                }]
+            }]
         }
     ]
 }

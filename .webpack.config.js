@@ -22,7 +22,7 @@ const webpackConfig = {
         [pkg.name]: ['@babel/polyfill', src.js],
     },
     publicPath: '/',
-    outputPath: outputPath,
+    outputPath,
     copy: [{
         from: src.static,
         to: dist.static,
@@ -34,13 +34,13 @@ const webpackConfig = {
     theme: theme,
     isMockOpen: false,
     port: 9998,
-    // proxy: {
-    //     "/api": {
-    //     "target": "http://jsonplaceholder.typicode.com/",
-    //     "changeOrigin": true,
-    //     "pathRewrite": { "^/api" : "" }
-    //     }
-    // },
+    proxy: {
+        "/api": {
+            "target": "http://tms-dev.bnq.com.cn/",
+            "changeOrigin": true,
+            "pathRewrite": { "^/api" : "" }
+        }
+    },
 };
 
 module.exports = webpackConfig;

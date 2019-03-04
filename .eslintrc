@@ -2,10 +2,10 @@
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
-          "legacyDecorators": true,
-          "experimentalObjectRestSpread": true
+            "legacyDecorators": true,
+            "experimentalObjectRestSpread": true
         }
-      },
+    },
     "extends": "airbnb",
     "env": {
         "browser": true,
@@ -16,13 +16,13 @@
     ],
     "settings": {
         "import/resolver": {
-          "babel-module": {
-            "alias": {
-                "components": "./src/components",
-                "core": "./src/core",
-                "util": "./src/util",
-                "config": "./src/config",
-                "common": "./src/common"
+            "babel-module": {
+                "alias": {
+                    "components": "./src/components",
+                    "core": "./src/core",
+                    "util": "./src/util",
+                    "config": "./src/config",
+                    "common": "./src/common"
                 }
             }
         }
@@ -31,9 +31,9 @@
         "indent": ["error", 4, { "SwitchCase": 1, "VariableDeclarator": { "var": 2, "let": 2, "const": 3 } }],
         "quotes": ["error", "single", { "allowTemplateLiterals": true, "avoidEscape": true }],
         "linebreak-style": "off",
-        "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+        "no-underscore-dangle": 0,
         "arrow-body-style": ["error", "always"],
-        "max-len": ["error", { "code": 120, "ignoreTemplateLiterals": true, "ignoreRegExpLiterals": true, "ignoreUrls": true }],
+        "max-len": ["error", { "code": 200, "ignoreTemplateLiterals": true, "ignoreRegExpLiterals": true, "ignoreUrls": true }],
         "class-methods-use-this": "off",
         "consistent-return": ["error", { "treatUndefinedAsUnspecified": false }],
         "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],

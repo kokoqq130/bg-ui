@@ -55,7 +55,7 @@ class Banner extends React.PureComponent {
                       type="bottom"
                   >
                       <h1 key="h1">
-                      Backstage UI
+                          Bnq-Component
                       </h1>
                       <p key="p">
                       服务于百安居前端团队，XXXXXXXXXXXXXXXXXXX。

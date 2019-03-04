@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import {
-    object, func, array, string,
-} from 'prop-types';
+import { array } from 'prop-types';
 import { Button } from 'antd';
+import { Remote } from '../../../../demo/src/util';
 
 
 import './index.less';
@@ -12,38 +11,32 @@ class Common2 extends Component {
         /**
          * 测试object
          */
-        object,
-        /**
-         * 测试func
-         *  @param {object} event TouchTap event targeting the left `IconButton`.
-         *  @param {object} event TouchTap event targeting the left `IconButton`.
-         */
-        func,
-        /**
-         * 测试array
-         */
-        array,
-        /**
-         * 测试string
-         */
-        string,
+        _array: array,
 
     };
 
     static defaultProps = {
-        object: { test: '测试哦' },
-        func: (obj1, obj2) => {
-            return `${obj1} ${obj2}`;
-        },
-        array: ['test1', 'test2'],
-        string: '测试测试',
+        _array: ['test1', '测试1'],
+    };
+
+    handleClick = () => {
+        Remote.get('delivery/order/queryOrderList').then((res) => {
+            console.info(res);
+        });
     };
 
     render() {
         return (
             <div>
                 我是一个测试组件2
-                <Button>测试2按钮</Button>
+                {
+                    this.props._array.map((item) => {
+                        return <div key={item}>{item}</div>;
+                    })
+                }
+                <Button
+                    onClick={this.handleClick}
+                >测试2按钮</Button>
             </div>
         );
     }

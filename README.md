@@ -1,5 +1,4 @@
-#start steps
+# 开始使用
     yarn
-    npm start
+    npm run start
 
-#test components

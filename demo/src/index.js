@@ -4,9 +4,8 @@ import { LocaleProvider } from 'antd';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import 'moment/locale/zh-cn';
 import App from './pages/App';
-import registerServiceWorker from './registerServiceWorker';
 
 /* eslint-disable react/jsx-filename-extension */
-ReactDom.render(<LocaleProvider locale={zhCN}><App /></LocaleProvider>, document.getElementById('app'));
+ReactDom.render(<LocaleProvider locale={zhCN}><App /></LocaleProvider>,
+    document.getElementById('app'));
 /* eslint-enable react/jsx-filename-extension */
-registerServiceWorker();

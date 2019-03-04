@@ -16,8 +16,9 @@ try {
 }
 
 const env = process.env.NODE_ENV;
-const threadPool = HappyPack.ThreadPool({ size: os.cpus().length })
+const threadPool = HappyPack.ThreadPool({ size: os.cpus().length });
 const PATH_NODE_MODULES = resolve('node_modules');
+console.info(PATH_NODE_MODULES);
 const chunkhash = env === 'development' ? 'hash' : 'chunkhash';
 const contenthash = env === 'development' ? 'hash' : 'contenthash';
 const seen = new Set();
@@ -52,15 +53,15 @@ const packConfig = {
 };
 packConfig.module = {
     rules: [
-        // // eslint检查
-        // {
-        //     test: /\.jsx?$/,
-        //     enforce: 'pre',
-        //     use: [{
-        //         loader: 'eslint-loader'
-        //     }],
-        //     exclude: [PATH_NODE_MODULES]
-        // },
+        // eslint检查
+        {
+            test: /\.(js|jsx)$/,
+            enforce: 'pre',
+            use: [{
+                loader: 'eslint-loader'
+            }],
+            exclude: [PATH_NODE_MODULES]
+        },
 
         // 转化ES6语法
         {
@@ -78,13 +79,13 @@ packConfig.module = {
         // less文件编译
         {
             test: /\.less$/,
-            exclude: [/node_modules/, resolve('package/backstage-ui/components')],
+            exclude: [/node_modules/, resolve('package/bnq-component-ui/component')],
             use: [MiniCssExtractPlugin.loader, 'happypack/loader?id=less'],
         },
         // less node-moudle 文件编译
         {
             test: /\.less$/,
-            include: [/node_modules/, resolve('package/backstage-ui/components')],
+            include: [/node_modules/, resolve('package/bnq-component-ui/component')],
             use: [MiniCssExtractPlugin.loader, 'happypack/loader?id=nodeless'],
         },
         // 图片转化，小于8k自动转化成base64编码
@@ -196,11 +197,6 @@ packConfig.plugins = [
         hashDigestLength: 20
         }),
     new ProgressBarPlugin(),
-    // 增加webpack-dll插件
-    // new webpack.DllReferencePlugin({
-    //     context: __dirname,
-    //     manifest: require(`./.dll/${pkg.name}-manifest.json`),
-    // }),
 ],
 packConfig.devServer = {
     port: webpackConfig.port || 9999,

@@ -1,11 +1,11 @@
 export default [{
-    path: '/',
-    exact: true,
-    page: () => { return import('../component/Welcome'); },
-}, {
     path: '/guide',
     exact: true,
     page: () => { return import('../component/pages/components/Home/Page'); },
+}, {
+    path: '/towrite',
+    exact: true,
+    page: () => { return import('../component/pages/components/ToWrite/Page'); },
 }, {
     path: '/test',
     exact: true,
@@ -14,4 +14,8 @@ export default [{
     path: '/testservice',
     exact: true,
     page: () => { return import('../component/pages/components/Test/Page'); },
+}, {
+    path: '/new',
+    exact: true,
+    page: () => { return import('../component/pages/components/New/Page'); },
 }];

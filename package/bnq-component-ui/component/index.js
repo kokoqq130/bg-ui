@@ -7,4 +7,6 @@ export { default as Exception } from './Exception';
 
 export { default as Loading } from './Loading';
 
+export { default as New } from './New';
+
 export { default as SiderMenu } from './SiderMenu';
