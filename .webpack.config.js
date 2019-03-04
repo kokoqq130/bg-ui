@@ -36,7 +36,7 @@ const webpackConfig = {
     port: 9998,
     proxy: {
         "/api": {
-            "target": "http://tms-dev.bnq.com.cn/",
+            "target": "http://www.baidu.com",
             "changeOrigin": true,
             "pathRewrite": { "^/api" : "" }
         }

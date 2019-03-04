@@ -14,8 +14,4 @@ export default [{
     path: '/testservice',
     exact: true,
     page: () => { return import('../component/pages/components/Test/Page'); },
-}, {
-    path: '/new',
-    exact: true,
-    page: () => { return import('../component/pages/components/New/Page'); },
 }];

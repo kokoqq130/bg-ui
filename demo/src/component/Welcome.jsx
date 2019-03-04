@@ -5,7 +5,7 @@ class Welcome extends View {
     render() {
         return (
             <div className="clearfix">
-                欢迎使用百安居组件库
+                欢迎使用组件库
             </div>
         );
     }

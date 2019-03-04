@@ -5,7 +5,7 @@ import ReadMeDescription from '../../../ReadMeDescription';
 import MarkdownElement from '../../../MarkdownElement';
 import Common1ReadmeText from '!raw-loader!./README.md';
 import Common1ExampleCode from '!raw-loader!./ExampleIcon';
-import common1Code from '!raw-loader!@bnq/component-ui/Common1';
+import common1Code from '!raw-loader!@bk/component-ui/Common1';
 import Common1ExampleIcon from './ExampleIcon';
 
 const TestPage = () => {

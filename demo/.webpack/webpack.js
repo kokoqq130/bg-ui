@@ -79,13 +79,13 @@ packConfig.module = {
         // less文件编译
         {
             test: /\.less$/,
-            exclude: [/node_modules/, resolve('package/bnq-component-ui/component')],
+            exclude: [/node_modules/, resolve('package/back-ui/component')],
             use: [MiniCssExtractPlugin.loader, 'happypack/loader?id=less'],
         },
         // less node-moudle 文件编译
         {
             test: /\.less$/,
-            include: [/node_modules/, resolve('package/bnq-component-ui/component')],
+            include: [/node_modules/, resolve('package/back-ui/component')],
             use: [MiniCssExtractPlugin.loader, 'happypack/loader?id=nodeless'],
         },
         // 图片转化，小于8k自动转化成base64编码
@@ -109,7 +109,7 @@ packConfig.resolve = {
     // require时省略的扩展名，如：require('module') 不需要module.js
     extensions: webpackConfig.extensions || defaultConfig.extensions,
     alias: {
-        "@bnq/component-ui": resolve('package/bnq-component-ui/component'),
+        "@bk/component-ui": resolve('package/back-ui/component'),
     },
 };
 // 插件

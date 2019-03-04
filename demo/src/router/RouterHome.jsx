@@ -1,6 +1,6 @@
 import { Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
-import Loading from '@bnq/component-ui/Loading';
+import Loading from '@bk/component-ui/Loading';
 
 export default class RouterHome {
     static getRouters() {

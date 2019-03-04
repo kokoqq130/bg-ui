@@ -1,7 +1,7 @@
 {
-  "name": "bnq-sys-react-component",
-  "version": "0.0.9",
-  "description": "react component for bnq",
+  "name": "back-ui-component",
+  "version": "0.0.1",
+  "description": "react component for back",
   "main": "lib/index.js",
   "files": [
     "lib"

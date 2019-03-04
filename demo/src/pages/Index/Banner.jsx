@@ -55,10 +55,10 @@ class Banner extends React.PureComponent {
                       type="bottom"
                   >
                       <h1 key="h1">
-                          Bnq-Component
+                          Back-Component
                       </h1>
                       <p key="p">
-                      服务于百安居前端团队，XXXXXXXXXXXXXXXXXXX。
+                      服务于XXXXX，XXXXXXXXXXXXXXXXXXX。
                       </p>
                       {!isMobile && (
                           <div className="banner-btns" key="buttons">

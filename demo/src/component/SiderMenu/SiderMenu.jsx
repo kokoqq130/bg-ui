@@ -1,6 +1,6 @@
 /**
  * @Description: 对Ant-design pro的SiderMenu进行重写
- * @author 王发靖 Fajing.Wang@b-and-qchina.com
+ * @author kokoqq130
  * @date 2019/2/19
 */
 import React, { Component } from 'react';

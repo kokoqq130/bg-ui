@@ -1,14 +1,14 @@
 /**
  * @Description: 定义路由组件
- * @author 王发靖 Fajing.Wang@b-and-qchina.com
+ * @author kokoqq130
  * @date 2019/2/18
 */
 
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
-import Exception from '@bnq/component-ui/Exception';
-import Loading from '@bnq/component-ui/Loading';
+import Exception from '@bk/component-ui/Exception';
+import Loading from '@bk/component-ui/Loading';
 import { openPaths, menus } from '../../config/config.json';
 import { TreeIterator } from '../util';
 import RouteConfig from './RouterConfig';

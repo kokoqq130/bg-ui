@@ -8,7 +8,7 @@ import { Layout } from 'antd';
 import DocumentTitle from 'react-document-title';
 import { ContainerQuery } from 'react-container-query';
 import classNames from 'classnames';
-import Loading from '@bnq/component-ui/Loading';
+import Loading from '@bk/component-ui/Loading';
 import View from '../../core/View';
 import { Device } from '../../util';
 import '../../style/common.css';

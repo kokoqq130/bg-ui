@@ -79,7 +79,7 @@ class Home extends React.Component {
       const { isMobile } = this.context;
       const childProps = { ...this.props, isMobile, locale: {} };
       return (
-          <DocumentTitle title="Bnq-Component">
+          <DocumentTitle title="Back-Component">
               <div>
                   <div className="main-wrapper">
                       <Banner {...childProps} />

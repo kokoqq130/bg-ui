@@ -5,7 +5,7 @@ import ReadMeDescription from '../../../ReadMeDescription';
 import MarkdownElement from '../../../MarkdownElement';
 import Common2ReadmeText from '!raw-loader!./README.md';
 import Common2ExampleCode from '!raw-loader!./ExampleIcon';
-import common2Code from '!raw-loader!@bnq/component-ui/Common2';
+import common2Code from '!raw-loader!@bk/component-ui/Common2';
 import Common2ExampleIcon from './ExampleIcon';
 
 const Test = () => {

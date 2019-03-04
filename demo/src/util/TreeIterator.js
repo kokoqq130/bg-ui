@@ -1,6 +1,6 @@
 /**
  * @Description: 树形结构操作工具
- * @author 王发靖 Fajing.Wang@b-and-qchina.com
+ * @author kokoqq130
  * @date 2019/2/19
 */
 export default class TreeIterator {

@@ -1,12 +1,12 @@
 {
-    "projectName": "Bnq-Component UI",
+    "projectName": "Back-Component UI",
     "routeType": "browser",
     "menuPosition": "left",
     "openPaths": ["/", "/403", "/404", "/500"],
     "userHabit": false,
     "api": {
         "protocol": "http",
-        "domain": "tms-dev.bnq.com.cn/"
+        "domain": "www.baidu.com/"
     },
     "query": {
         "screen-xs": {
@@ -58,9 +58,9 @@
                     "key": "testservice",
                     "path": "/testservice"
                 }, {
-                    "name": "新建表单",
-                    "key": "new",
-                    "path": "/new"
+                    "name": "测试404",
+                    "key": "notfind",
+                    "path": "/notfind"
                 }]
             }]
         }

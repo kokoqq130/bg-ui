@@ -1,6 +1,6 @@
 /**
  * @Description: 定义远程访问组件
- * @author 王发靖 Fajing.Wang@b-and-qchina.com
+ * @author kokoqq130
  * @date 2019/2/25
 */
 
